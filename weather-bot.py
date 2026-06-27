@@ -59,7 +59,7 @@ def main():
     # Command handlers
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("weather", ask_for_city))
-    
+
     # Handle city name input from users
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, city_response))
 
